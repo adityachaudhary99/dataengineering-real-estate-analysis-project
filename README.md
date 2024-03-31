@@ -27,7 +27,7 @@ Accidents can occur more frequently in certain neighborhoods or zip codes. Ident
 
 # Reproducing from scratch
 ## 1. To reproduce this code entirely from scratch, you will need to create a AWS account:
-Refer [here]() for AWS setup details
+Refer [here](https://github.com/adityachaudhary99/dataengineering-real-estate-analysis-project/blob/main/pre-reqs.md) for AWS setup details
 
 ## 2. You'll need your IaC to build your infrastructure. In this project, Terraform is used
 Download Terraform!
@@ -56,7 +56,7 @@ In the screenshot below:
 * run the `local_to_aws_dag` in the airflow UI after setting up airflow. 
 
 ## 5. Snowflake
-The snowflake environment is setup up using the files [here]().
+The snowflake environment is setup up using the files [here](https://github.com/adityachaudhary99/dataengineering-real-estate-analysis-project/blob/main/snowflake_scripts).
 A snowpipe is configured in snowflake that is triggered by the event notification setup in the project s3 bucket(send notification as soon as a new file is uploaded in the project s3 bucket). This snowpipe transfers the data from the s3 bucket into an external stage in a metadata base in snowflake in the form of table. This table is then used to load the transformed data in the main data warehouse for the project. 
 
 ### 6. Create your dashboard
@@ -74,5 +74,3 @@ Simple dashboard at Google Data studio with few graphs.
 
 Below is a screenshot of my [dashboard](https://lookerstudio.google.com/s/raoYn0w6ehQ).
 ![alt text](./img/Dashboard.png)
-
-Thanks to the DataTalksClub for the oppurtunity! If you have any questions, please feel free to open a PR or send me an email.
