@@ -1,5 +1,4 @@
-# Motor-Vehicles-Collision-Data-Analysis-NewYork
-### Identifying High-Risk Areas based on accident data.
+# Real-Estate-Data-Analysis
 
 ## Workflow/Architecture
 ![alt text](./img/architecture.png)
