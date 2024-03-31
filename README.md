@@ -6,8 +6,7 @@
 
 
 ## Problem: Identifying High-Risk Areas
-For this project I've tried to build a batch pipeline to process motor vehicle collisions data in New York from (`https://catalog.data.gov/`,An official website of the GSA's Technology Transformation Services).The Motor Vehicle Collisions crash table contains details on the crash event. Each row represents a crash event. The Motor Vehicle Collisions data tables contain information from all police reported motor vehicle collisions/accidents in NYC. 
-Accidents can occur more frequently in certain neighborhoods or zip codes. Identifying these high-risk areas is crucial for improving safety measures, allocating resources effectively, and preventing accidents. **We want to pinpoint the locations where accidents are most likely to happen.**
+For this project I've tried to build a batch pipeline to process real estate data   from (`https://catalog.data.gov/`,An official website of the GSA's Technology Transformation Services).
 
 ## Dataset
 [Real Estate dataset website](https://catalog.data.gov/dataset/real-estate-sales-2001-2018/resource/f7cb94d8-283c-476f-a966-cc8c9e1308b4)
@@ -17,7 +16,7 @@ Accidents can occur more frequently in certain neighborhoods or zip codes. Ident
 ## Technologies
 - **Amazon Web Services** (AWS):
   - VM Instance to run project on it.
-  - Cloud Storage to store processed data.
+  - Cloud Storage to store data.
 - **Terraform** to create cloud infrastructure.
 - **Docker** for containerization (docker-compose)
 - **Python** main programming language
