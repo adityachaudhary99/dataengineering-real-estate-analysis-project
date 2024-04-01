@@ -4,8 +4,8 @@
 ![alt text](./img/architecture.png)
 
 
-## Problem: Identifying High-Risk Areas
-For this project I've tried to build a batch pipeline to process real estate data   from (`https://catalog.data.gov/`,An official website of the GSA's Technology Transformation Services).
+## Urban Planning and Real Estate Data: Enhancing Community Development and Housing Diversity
+For this project I've tried to build a batch pipeline to process real estate data of the state of Connecticut from (`https://catalog.data.gov/`,An official website of the GSA's Technology Transformation Services). The potential question I try to answer is, How can real estate professionals and investors leverage market data to identify trends and make data-driven decisions to optimize property portfolio performance?
 
 ## Dataset
 [Real Estate dataset website](https://catalog.data.gov/dataset/real-estate-sales-2001-2018/resource/f7cb94d8-283c-476f-a966-cc8c9e1308b4)
@@ -45,12 +45,9 @@ The dataset data download, process and upload to cloud storage, transfer to data
 
 **Local to AWS Dag**  
   - Downloads the dataset file in the csv format. This task runs by a bash script, which downloads the data. 
-  - Next the data is pre-processed using pyspark(changing column names, data types, etc) and saves it locally in the form of parquet file. 
   - This file is then uploaded to project Cloud Storage(Data Lake).
-  - Last task triggers the <code>gcs_to_bq_dag</code> so that it runs right after the data has been loaded to project Cloud Storage.
 
 ## 4. Run the DAGs
-In the screenshot below:
 * run the `local_to_aws_dag` in the airflow UI after setting up airflow. 
 
 ## 5. Snowflake
