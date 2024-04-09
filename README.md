@@ -68,4 +68,5 @@ Simple dashboard at Google Data studio with few graphs.
 - Residential Type Distribution.
 
 Below is a screenshot of my [dashboard](https://lookerstudio.google.com/s/raoYn0w6ehQ).
+
 ![alt text](./img/Dashboard.png)
